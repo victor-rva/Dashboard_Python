@@ -33,3 +33,5 @@ col4.plotly_chart(fig_kind, use_container_width=True)
 city_total = df_filtered.groupby("City")[["Rating"]].mean().reset_index()
 fig_rating = px.bar(df_filtered, x="City", y="Rating", title="Avaliação")
 col5.plotly_chart(fig_rating, use_container_width=True)
+
+#streamlit run caminho_do_arquivo
